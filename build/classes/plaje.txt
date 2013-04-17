@@ -1,0 +1,27 @@
+Alumnos 
+
+a3627993
+a0462775J
+a3627608
+
+Docente
+
+a1626701
+
+
+
+select * from colegios.periodo_academico_seccion_curso pasc , colegios.periodo_academico_seccion pas
+where pasc.id_periodo_academico_seccion = pas.id_periodo_academico_seccion
+
+
+1;1;;"0";"2011";"2011-01-01";"2011-12-20"
+2;1;;"1";"2012";"2012-01-01";"2012-12-20"
+25;1;1;"0";"2011 Primer Bimestre";"2011-01-02";"2011-03-20"
+26;1;1;"0";"2011 Segundo Bimestre";"2011-04-01";"2011-06-20"
+27;1;1;"0";"2011 Tercer Bimestre";"2011-07-01";"2011-08-20"
+28;1;1;"0";"2011 Cuarto Bimestre";"2011-09-01";"2011-11-20"
+3;1;2;"1";"2012 Primer Bimestre";"2012-01-02";"2012-03-20"
+4;1;2;"0";"2012 Segundo Bimestre";"2012-04-01";"2012-06-20"
+5;1;2;"0";"2012 Tercer Bimestre";"2012-07-01";"2012-08-20"
+6;1;2;"0";"2012 Cuarto Bimestre";"2012-09-01";"2012-11-20"
+

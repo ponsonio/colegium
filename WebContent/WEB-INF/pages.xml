@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pages login-view-id="/error.xhtml"
+ no-conversation-view-id="/error.xhtml"
+ xmlns="http://jboss.com/products/seam/pages"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jboss.com/products/seam/pages http://jboss.com/products/seam/pages-2.2.xsd">
+ 
+
+
+ <!-- Principales -->
+ 
+ <page action ="#{CColegioMedioContacto.mostrarMedioContacto}" view-id="/principal/contactoColegio.xhtml"/>
+ 
+
+
+ <!-- Alumnos -->
+ 
+ <page action ="#{CAlumnoDatosPrincipales.mostrarDatosPrincipales}" view-id="/alumno/alumnoDatosPrincipales.xhtml"/>
+ 
+ <page action ="#{CAlumnoDatosPrincipales.mostrarMedioContacto}" view-id="/alumno/alumnoMedioContacto.xhtml"/>
+ 
+ <page action ="#{CAlumnoAsistecia.mostrarAsistenciaAlumnoSubPeriodo}" view-id="/alumno/alumnoAsistencia.xhtml"/>
+ 
+ 
+ <page action ="#{CAlumnoLibretaNotas.mostrarLibretaPeriodoActual}" view-id="/alumno/alumnoLibretaNotas.xhtml"/>
+ 
+  
+ <page action ="#{CAlumnoMatricula.mostrarMatriculaAlumno}" view-id="/alumno/alumnoCursosMatriculados.xhtml"/>
+ 
+ 
+ <page action ="#{CAlumnoAvisos.mostrarAvisos}" view-id="/alumno/alumnoAvisos.xhtml"/>
+ 
+ 
+ <page action ="#{CAlumnoMateriales.mostrarMaterialesAlumno}" view-id="/alumno/alumnoMateriales.xhtml"/>
+ 
+ 
+ <page action ="#{CAlumnoAsignaciones.mostrarAsignaciones}" view-id="/alumno/alumnoAsignaciones.xhtml"/>
+ 
+ <!-- Apoderados -->
+ 
+ <page action ="#{CApoderadoDatosPrincipales.mostrarDatosPrincipales}" view-id="/apoderado/apoderadoDatosPrincipales.xhtml"/>
+                
+ <page action ="#{CApoderadoDatosPrincipales.mostrarMedioContacto}" view-id="/apoderado/apoderadoMedioContacto.xhtml"/>  
+ 
+ <page action ="#{CApoderadoDatosPrincipales.mostrarDependientes}" view-id="/apoderado/apoderadoListaDependientes.xhtml"/>                
+
+ <page action ="#{CApoderadoDatosPrincipales.mostrarDependientes}" view-id="/apoderado/apoderadoListaDependientesSelect.xhtml"/>  
+ 
+ <page action ="#{CApoderadoDatosPrincipales.mostrarDependienteDatosPrincipales}" view-id="/apoderado/apoderadoDependienteDatosPrincipales.xhtml"/>
+               
+ <page action ="#{CApoderadoDatosPrincipales.mostrarMedioContactoDependiente}" view-id="/apoderado/apoderadoMedioContactoDependientes.xhtml"/>
+ 
+  <page action ="#{CApoderadoAsignacionesDependiente.mostrarAsignacionesDependiente}" view-id="/apoderado/apoderadoAsignacionesDependiente.xhtml"/>
+  
+   <page action ="#{CApoderadoAsistenciaDependiente.mostrarAsistenciaDependienteSubPeriodo}" view-id="/apoderado/apoderadoAsistenciaDependiente.xhtml"/>
+ 
+  <page action ="#{CApoderadoAvisosDependiente.mostrarAvisosDependiente}"  view-id="/apoderado/apoderadoAvisosDependiente.xhtml"/>
+  
+  <page action ="#{CApoderadoMatriculaDependiente.mostrarMatriculaDependiente}"  view-id="/apoderado/apoderadoCursosMatriculadosDependiente.xhtml"/>
+  
+  <page action ="#{CApoderadoLibretaNotas.mostrarLibretaPeriodoActualDependiente}"  view-id="/apoderado/apoderadoLibretaNotasDependiente.xhtml"/>
+  
+  <page action ="#{CApoderadoMaterialesDependiente.mostrarMaterialesAlumno}"  view-id="/apoderado/apoderadoMaterialesDependiente.xhtml"/>
+  
+  <page action ="#{CApoderadoRecibos.mostrarRecibosDependientes}"  view-id="/apoderado/apoderadoRecibosPendientes.xhtml"/>
+  
+  
+  <!-- Docentes -->
+  
+ <page action ="#{CDocenteDatosPrincipales.mostrarDatosPrincipales}" view-id="/docente/docenteDatosPrincipales.xhtml"/>
+ 
+ <page action ="#{CDocenteDatosPrincipales.mostrarCursosLectivos}" view-id="/docente/docenteSeccionesCursoLectivas.xhtml"/>
+ 
+ <page action ="#{CDocenteDatosPrincipales.mostrarSeccionesTutor}" view-id="/docente/docenteSeccionesTutor.xhtml"/>
+ 
+ <page action ="#{CDocenteMateriales.nuevoMaterial}" view-id="/docente/docentePublicarMaterial.xhtml"/>
+ 
+  <page action ="#{CDocenteDatosPrincipales.mostrarDatosPrincipales}" view-id="/docente/docenteSeccionSelect.xhtml"/>
+
+ <page action ="#{CDocenteAsistenciaAlumno.mostrarAsistenciaSeccion}" view-id="/docente/docenteAsistenciaAlumnosSeccion.xhtml"/>
+  
+  <page action ="#{CDocenteDatosPrincipales.mostrarDatosPrincipales}" view-id="/docente/docenteSeccionEvaluacionSelect.xhtml"/>
+   
+  <page action ="#{CDocenteIngresoNotas.iniciarIngresoNotas}" view-id="/docente/docenteIngresarEvaluacion.xhtml"/>
+   
+   
+ 
+	<!--    <navigation>
+ <page action ="#{recordAcademico.iniciar}" view-id="/recordacademico/recordAcademicoCicloCurso.xhtml"/>
+ 
+ <page action ="#{recibos.mostrarRecibosPagoPendientes}" view-id="/pago/recibosPendientes.xhtml"/>
+ 
+ <page action ="#{asistencias.mostrarInasistenciasAlumno}" view-id="/asistencia/recordInsasistenciasPeriodoAlumno.xhtml"/>
+ 
+ 
+   <rule if-outcome="*">
+    <redirect view-id="/datosPersona/viewDatosPersona.xhtml"/>
+   </rule>
+  </navigation>
+ </page>
+ -->
+ 
+ 
+ <exception class="org.jboss.seam.framework.EntityNotFoundException">
+  <redirect view-id="/error.xhtml">
+   <message severity="warn">Record not found</message>
+  </redirect>
+ </exception>
+ <exception class="javax.persistence.EntityNotFoundException">
+  <redirect view-id="/error.xhtml">
+   <message severity="warn">Record not found</message>
+  </redirect>
+ </exception>
+ <exception class="javax.persistence.EntityExistsException">
+  <redirect view-id="/error.xhtml">
+   <message severity="warn">Duplicate record</message>
+  </redirect>
+ </exception>
+ <exception class="javax.persistence.OptimisticLockException">
+  <end-conversation/>
+  <redirect view-id="/error.xhtml">
+   <message severity="warn">Another user changed the same data, please try again</message>
+  </redirect>
+ </exception>
+ <exception class="org.jboss.seam.security.AuthorizationException">
+  <redirect view-id="/error.xhtml">
+   <message severity="error">You don't have permission to access this resource</message>
+  </redirect>
+ </exception>
+ <exception class="javax.faces.application.ViewExpiredException">
+  <redirect view-id="/error.xhtml">
+   <message severity="warn">Your session has timed out, please try again</message>
+  </redirect>
+ </exception>
+ <exception class="org.jboss.seam.ConcurrentRequestTimeoutException" log-level="trace">
+  <http-error error-code="503"/>
+ </exception>
+ <exception class="org.jboss.seam.Seam" log-level="trace">
+  <redirect view-id="/error.xhtml">
+   <message severity="error">Unexpected error, please try again</message>
+  </redirect>
+ </exception>
+ <!--  
+  <exception class="java.lang.Exception" log-level="trace">
+  <redirect view-id="/error.xhtml">
+   <message severity="error">Unexpected error, please try again</message>
+  </redirect>
+ </exception>
+ -->
+</pages>

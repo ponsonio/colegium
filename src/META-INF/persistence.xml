@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="Colegium" transaction-type="JTA">
+		<!--  <provider>ColegiumDatasource</provider> -->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/ColegiumDatasource</jta-data-source>
+		<class>org.domain.colegium.entity.TipoEvaluacion</class>
+		<class>org.domain.colegium.entity.TipoAsignacion</class>
+		<class>org.domain.colegium.entity.TipoApoderado</class>
+		<class>org.domain.colegium.entity.SubPeriodoAcademicoSeccionCurso</class>
+		<class>org.domain.colegium.entity.Seccion</class>
+		<class>org.domain.colegium.entity.ResumenAlumnoId</class>
+		<class>org.domain.colegium.entity.ResumenAlumno</class>
+		<class>org.domain.colegium.entity.RepositorioArchivos</class>
+		<class>org.domain.colegium.entity.ReciboPensionDetalle</class>
+		<class>org.domain.colegium.entity.ReciboPension</class>
+		<class>org.domain.colegium.entity.PersonaMedioContactoId</class>
+		<class>org.domain.colegium.entity.PersonaMedioContacto</class>
+		<class>org.domain.colegium.entity.Persona</class>
+		<class>org.domain.colegium.entity.Permiso</class>
+		<class>org.domain.colegium.entity.PeriodoAcademicoSeccionCursoNota</class>
+		<class>org.domain.colegium.entity.PeriodoAcademicoSeccionCurso</class>
+		<class>org.domain.colegium.entity.PeriodoAcademicoSeccion</class>
+		<class>org.domain.colegium.entity.PeriodoAcademico</class>
+		<class>org.domain.colegium.entity.Moneda</class>
+		<class>org.domain.colegium.entity.MensajeDestinatarioId</class>
+		<class>org.domain.colegium.entity.MensajeDestinatario</class>
+		<class>org.domain.colegium.entity.Mensaje</class>
+		<class>org.domain.colegium.entity.MedioContacto</class>
+		<class>org.domain.colegium.entity.MatriculaAlumno</class>
+		<class>org.domain.colegium.entity.Materiales</class>
+		<class>org.domain.colegium.entity.MaterialEvaluacionId</class>
+		<class>org.domain.colegium.entity.MaterialEvaluacion</class>
+		<class>org.domain.colegium.entity.MaterialAsignacionId</class>
+		<class>org.domain.colegium.entity.MaterialAsignacion</class>
+		<class>org.domain.colegium.entity.LibretaNotasSubperiodo</class>
+		<class>org.domain.colegium.entity.LibretaNotasFinalesCurso</class>
+		<class>org.domain.colegium.entity.LibretaNotas</class>
+		<class>org.domain.colegium.entity.Justificacion</class>
+		<class>org.domain.colegium.entity.Grado</class>
+		<class>org.domain.colegium.entity.FotoPersona</class>
+		<class>org.domain.colegium.entity.EvaluacionAlumno</class>
+		<class>org.domain.colegium.entity.Evaluacion</class>
+		<class>org.domain.colegium.entity.Docente</class>
+		<class>org.domain.colegium.entity.Curso</class>
+		<class>org.domain.colegium.entity.CuentaBanco</class>
+		<class>org.domain.colegium.entity.Concepto</class>
+		<class>org.domain.colegium.entity.ColegioMedioContactoId</class>
+		<class>org.domain.colegium.entity.ColegioMedioContacto</class>
+		<class>org.domain.colegium.entity.Colegio</class>
+		<class>org.domain.colegium.entity.Banco</class>
+		<class>org.domain.colegium.entity.AvisoSeccionId</class>
+		<class>org.domain.colegium.entity.AvisoSeccion</class>
+		<class>org.domain.colegium.entity.Aviso</class>
+		<class>org.domain.colegium.entity.Asistencia</class>
+		<class>org.domain.colegium.entity.AsignacionAlumno</class>
+		<class>org.domain.colegium.entity.Asignacion</class>
+		<class>org.domain.colegium.entity.Apoderado</class>
+		<class>org.domain.colegium.entity.Alumno</class>	
+		
+		<properties>
+			<property name="jboss.entity.manager.factory.jndi.name" value="java:/ColegiumEntityManagerFactory"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+	        <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.default_catalog" value="postgres"/>
+            <property name="hibernate.default_schema" value="colegios"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql:postgres"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+		</properties>
+	</persistence-unit>
+</persistence>

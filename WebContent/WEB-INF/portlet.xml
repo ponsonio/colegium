@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	version="2.0">
+
+	<!--Principales  -->
+
+	<portlet>
+		<description>Página Principal</description>
+		<portlet-name>Página Principal</portlet-name>
+		<display-name>Página Principal</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/principal/principal.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Página Principal</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Top Banner</description>
+		<portlet-name>Top Banner</portlet-name>
+		<display-name>Top Banner</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/principal/menu.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Top Banner</title>
+		</portlet-info>
+	</portlet>
+
+	
+	<portlet>
+		<description>Pie Pagina</description>
+		<portlet-name>Pie Pagina</portlet-name>
+		<display-name>Pie Pagina</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/principal/pie_pagina.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Pie Pagina</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description> Contacto de todos los Colégios</description>
+		<portlet-name>Contacto Colégios</portlet-name>
+		<display-name>Contacto Colégios</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/principal/contactoColegio.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Contacto Colégios</title>
+		</portlet-info>
+	</portlet>
+
+	<!--Alumnos  -->
+
+	<portlet>
+		<description>Alumno - Cursos Matriculados</description>
+		<portlet-name>Alumno - Cursos Matriculados</portlet-name>
+		<display-name>Ver Cursos Matriculados Alumno</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoCursosMatriculados.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Alumno Cursos Matriculados</title>
+		</portlet-info>
+	</portlet>
+	
+	<portlet>
+		<description>Alumno - Avisos</description>
+		<portlet-name>Alumno - Avisos</portlet-name>
+		<display-name>Ver Avisos Alumno</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoAvisos.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Avisos</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Alumno - Libreta de Notas</description>
+		<portlet-name>Alumno - Libreta de Notas</portlet-name>
+		<display-name>Libreta de Notas</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoLibretaNotas.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Libreta de Notas</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>
+			Asistencia del Alumno para el periodo en curso
+		</description>
+		<portlet-name>Alumno - Mi Asistencia</portlet-name>
+		<display-name>Mis Asistencias</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoAsistencia.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Asistencias</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Datos Principales Alumno en Session</description>
+		<portlet-name>Alumno - Mis Datos Principales</portlet-name>
+		<display-name>Mis Datos Principales</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoDatosPrincipales.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Datos Principales</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Medios de Contacto</description>
+		<portlet-name>Alumno - Medios de Contacto</portlet-name>
+		<display-name>Medios de Contacto</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoMedioContacto.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Medios de Contacto</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Descarga de Materiales del Curso</description>
+		<portlet-name>Alumno - Mis Materiales</portlet-name>
+		<display-name>Alumno - Mis Materiales</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoMateriales.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Materiales</title>
+		</portlet-info>
+	</portlet>
+
+
+	<portlet>
+		<description>Asignaciones y Tareas</description>
+		<portlet-name>Alumno - Asignaciones y Tareas</portlet-name>
+		<display-name>Alumno - Asignaciones y Tareas</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/alumno/alumnoAsignaciones.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Asignaciones y Tareas</title>
+		</portlet-info>
+	</portlet>
+	
+	<!--Apoderados  -->
+	
+	<portlet>
+		<description>Datos Principales Apoderado en Sesión</description>
+		<portlet-name>Apoderado - Mis Datos Principales</portlet-name>
+		<display-name>Mis Datos Principales</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoDatosPrincipales.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Datos Principales</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Medios de Contacto</description>
+		<portlet-name>Apoderado - Medios de Contacto</portlet-name>
+		<display-name>Apoderado - Medios de Contacto</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoMedioContacto.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Medios de Contacto</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Dependientes</description>
+		<portlet-name>Apoderado - Dependientes</portlet-name>
+		<display-name>Apoderado - Dependientes</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoListaDependientes.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Dependientes</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Recibos Pendientes</description>
+		<portlet-name>Apoderado Recibos Pendientes</portlet-name>
+		<display-name>Apoderado Recibos Pendientes</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoRecibosPendientes.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Recibos Pendientes</title>
+		</portlet-info>
+	</portlet>
+	
+	
+	
+	<portlet>
+		<description>Apoderado Seleción Dependientes</description>
+		<portlet-name>Apoderado Seleción Dependientes</portlet-name>
+		<display-name>Apoderado Seleción Dependientes</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoListaDependientesSelect.xhtml</value>
+		</init-param>		    
+       <init-param>
+      		<name>javax.portlet.faces.autoDispatchEvents</name>
+      		<value>true</value>
+    	</init-param>
+   		<init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Selecionar Dependientes</title>
+		</portlet-info>
+		<supported-publishing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-publishing-event>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Datos Principales Dependiente</description>
+		<portlet-name>Apoderado Datos Principales Dependiente</portlet-name>
+		<display-name>Apoderado Datos Principales Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoDependienteDatosPrincipales.xhtml</value>
+		</init-param>	  
+
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	    
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Datos Principales Dependiente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Medios Contacto Dependiente</description>
+		<portlet-name>Apoderado Medios Contacto Dependiente</portlet-name>
+		<display-name>Apoderado Medios Contacto Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoMedioContactoDependientes.xhtml</value>
+		</init-param>	  
+
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	    
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Medios Contacto Dependiente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Asignaciones y Tareas Dependiente</description>
+		<portlet-name>Apoderado Asignaciones y Tareas Dependiente</portlet-name>
+		<display-name>Apoderado Asignaciones y Tareas Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoAsignacionesDependiente.xhtml</value>
+		</init-param>
+		
+		<init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+	      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Asignaciones y Tareas Dependiente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+	
+	<portlet>
+		<description>Apoderado Asistencia Dependiente</description>
+		<portlet-name>AApoderado Asistencia Dependiente</portlet-name>
+		<display-name>Apoderado Asistencia Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoAsistenciaDependiente.xhtml</value>
+		</init-param>
+		
+		<init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+	      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Asistencia Dependiente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+	
+	
+	<portlet>
+		<description>Apoderado Avisos Dependiente</description>
+		<portlet-name>Apoderado Avisos Dependiente</portlet-name>
+		<display-name>Apoderado Avisos Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoAvisosDependiente.xhtml</value>
+		</init-param>	  
+
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	    
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Avisos Dependiente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+	
+
+	<portlet>
+		<description>Apoderado Cursos Matricualdos Dependiente</description>
+		<portlet-name>Apoderado Cursos Matricualdos Dependiente</portlet-name>
+		<display-name>Apoderado Cursos Matricualdos Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoCursosMatriculadosDependiente.xhtml</value>
+		</init-param>	  
+
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	    
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Cursos Matricualdos Dependiente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Libreta Notas Dependiente</description>
+		<portlet-name>Apoderado Libreta Notas Dependiente</portlet-name>
+		<display-name>Apoderado Libreta Notas Dependiente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoLibretaNotasDependiente.xhtml</value>
+		</init-param>	  
+
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	    
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Libreta Notas</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+
+	<portlet>
+		<description>Apoderado Materiales Depediente</description>
+		<portlet-name>Apoderado Materiales Depediente</portlet-name>
+		<display-name>Apoderado Materiales Depediente</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/apoderado/apoderadoMaterialesDependiente.xhtml</value>
+		</init-param>	  
+
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+	     <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEventHandler</value>
+	    </init-param>
+	    
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+      
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Apoderado Materiales Depediente</title>
+		</portlet-info>
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		</supported-processing-event>
+	</portlet>
+
+	<!--Docentes  -->
+
+	<portlet>
+		<description>Docente - Datos Principales</description>
+		<portlet-name>Docente - Mis Datos Principales</portlet-name>
+		<display-name> Docente- Mis Datos Principales</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteDatosPrincipales.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Datos Principales</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Docente -Medios de Contacto</description>
+		<portlet-name>Docente -Medios de Contacto</portlet-name>
+		<display-name>Docente - Medios de Contacto</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteMedioContacto.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Mis Medios de Contacto</title>
+		</portlet-info>
+	</portlet>
+	
+	<portlet>
+		<description>Docente -Cursos Lectivos</description>
+		<portlet-name>Docente -Cursos Lectivos</portlet-name>
+		<display-name>Docente -Cursos Lectivos</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteSeccionesCursoLectivas.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Docente -Cursos Lectivos</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Docente - Secciones Tutoriadas</description>
+		<portlet-name>Docente - Secciones Tutoriadas</portlet-name>
+		<display-name>Docente - Secciones Tutoriadas</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteSeccionesTutor.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Docente - Secciones Tutoriadas</title>
+		</portlet-info>
+	</portlet>
+	
+	<portlet>
+		<description>Docente - Publicar Material</description>
+		<portlet-name>Docente - Publicar Material</portlet-name>
+		<display-name>Docente - Publicar Material</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docentePublicarMaterial.xhtml</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Docente - Publicar Material</title>
+		</portlet-info>
+	</portlet>
+	
+	<portlet>
+		<description>Docente Seleción Sección</description>
+		<portlet-name>Docente Seleción Sección</portlet-name>
+		<display-name>Docente Seleción Sección</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteSeccionSelect.xhtml</value>
+		</init-param>		    
+       <init-param>
+      		<name>javax.portlet.faces.autoDispatchEvents</name>
+      		<value>true</value>
+    	</init-param>
+   		<init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Selecionar Sección</title>
+		</portlet-info>
+		<supported-publishing-event>
+			<qname xmlns:x="http://jboss.com">x:SeccionSelecionadaEvent</qname>
+		</supported-publishing-event>
+	</portlet>
+
+	<portlet>
+		<description>Docente - Asistencia Alumnos</description>
+		<portlet-name>Docente - Asistencia Alumnos</portlet-name>
+		<display-name>Docente - Asistencia Alumnos</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteAsistenciaAlumnosSeccion.xhtml</value>
+		</init-param>
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>	           
+		 <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.docente.SeccionSelecionadaEventHandler</value>
+	    </init-param>	    	    
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Docente - Asistencia Alumnos</title>
+		</portlet-info>		 
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:SeccionSelecionadaEvent</qname>
+		</supported-processing-event>		
+	</portlet>
+		
+	<portlet>
+		<description>Docente Seleción Evaluación Sección</description>
+		<portlet-name>Docente Seleción Evaluación Sección</portlet-name>
+		<display-name>Docente Seleción Evaluación Sección</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteSeccionEvaluacionSelect.xhtml</value>
+		</init-param>		    
+       <init-param>
+      		<name>javax.portlet.faces.autoDispatchEvents</name>
+      		<value>true</value>
+    	</init-param>
+   		<init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Selecionar Evaluación y Sección</title>
+		</portlet-info>
+		<!--  
+		<supported-publishing-event>
+			<qname xmlns:x="http://jboss.com">x:SeccionSelecionadaEvent</qname>
+		</supported-publishing-event>
+		-->
+		
+	</portlet>
+		<portlet>
+		<description>Docente - Ingreso Notas</description>
+		<portlet-name>Docente - Ingreso Notas</portlet-name>
+		<display-name>Docente -Ingreso Notas</display-name>
+		<portlet-class>
+			javax.portlet.faces.GenericFacesPortlet
+		</portlet-class>
+         <init-param>
+		      <name>javax.portlet.faces.autoDispatchEvents</name>
+		      <value>true</value>
+	    </init-param>
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/docente/docenteIngresarEvaluacion.xhtml</value>
+		</init-param>
+	     <init-param>
+	         <name>javax.portlet.faces.preserveActionParams</name>
+	         <value>true</value>
+	      </init-param>	           
+		 <init-param>
+		      <name>javax.portlet.faces.bridgeEventHandler</name>
+		      <value>org.domain.colegium.session.controler.docente.SeccionSelecionadaEventHandler</value>
+	    </init-param>	    	    
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Docente - Ingreso Notas</title>
+		</portlet-info>		 
+		<supported-processing-event>
+			<qname xmlns:x="http://jboss.com">x:SeccionSelecionadaEvent</qname>
+		</supported-processing-event>		
+	</portlet>
+	
+	
+
+	
+	
+	<event-definition>
+		<qname xmlns:x="http://jboss.com">x:DependienteSelecionadoEvent</qname>
+		<value-type>org.domain.colegium.session.controler.apoderado.DependienteSelecionadoEvent</value-type>
+	</event-definition>
+	
+		<event-definition>
+		<qname xmlns:x="http://jboss.com">x:SeccionSelecionadaEvent</qname>
+		<value-type>org.domain.colegium.session.controler.docente.SeccionSelecionadaEvent</value-type>
+	</event-definition>
+</portlet-app>
