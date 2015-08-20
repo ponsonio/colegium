@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram model-entity="SeamPagesDiagram">
+ <item ID="org.jboss.seam.framework.EntityNotFoundException"
+  NAME="exception:org.jboss.seam.framework.EntityNotFoundException"
+  PATH="org.jboss.seam.framework.EntityNotFoundException"
+  SHAPE="24,121,0,0" TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="javax.persistence.EntityNotFoundException"
+  NAME="exception:javax.persistence.EntityNotFoundException"
+  PATH="javax.persistence.EntityNotFoundException" SHAPE="24,225,0,0"
+  TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="javax.persistence.EntityExistsException"
+  NAME="exception:javax.persistence.EntityExistsException"
+  PATH="javax.persistence.EntityExistsException" SHAPE="24,329,0,0"
+  TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="javax.persistence.OptimisticLockException"
+  NAME="exception:javax.persistence.OptimisticLockException"
+  PATH="javax.persistence.OptimisticLockException" SHAPE="24,433,0,0"
+  TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="org.jboss.seam.security.AuthorizationException"
+  NAME="exception:org.jboss.seam.security.AuthorizationException"
+  PATH="org.jboss.seam.security.AuthorizationException"
+  SHAPE="24,537,0,0" TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="javax.faces.application.ViewExpiredException"
+  NAME="exception:javax.faces.application.ViewExpiredException"
+  PATH="javax.faces.application.ViewExpiredException" SHAPE="24,641,0,0"
+  TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="org.jboss.seam.ConcurrentRequestTimeoutException"
+  NAME="exception:org.jboss.seam.ConcurrentRequestTimeoutException"
+  PATH="org.jboss.seam.ConcurrentRequestTimeoutException"
+  SHAPE="24,953,0,0" TYPE="exception" model-entity="SeamPagesDiagramItem"/>
+ <item ID="org.jboss.seam.Seam" NAME="exception:org.jboss.seam.Seam"
+  PATH="org.jboss.seam.Seam" SHAPE="24,745,0,0" TYPE="exception" model-entity="SeamPagesDiagramItem">
+  <output ID="/error.xhtml" NAME="output" PATH="/error.xhtml"
+   TARGET="#xerror.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item NAME="#xerror.xhtml" PATH="/error.xhtml" SHAPE="472,121,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoDatosPrincipales.xhtml"
+  NAME="#xapoderado#xapoderadoDatosPrincipales.xhtml"
+  PATH="/apoderado/apoderadoDatosPrincipales.xhtml" SHAPE="664,849,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoAsistenciaDependiente.xhtml"
+  NAME="#xapoderado#xapoderadoAsistenciaDependiente.xhtml"
+  PATH="/apoderado/apoderadoAsistenciaDependiente.xhtml"
+  SHAPE="1624,849,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoLibretaNotas.xhtml"
+  NAME="#xalumno#xalumnoLibretaNotas.xhtml"
+  PATH="/alumno/alumnoLibretaNotas.xhtml" SHAPE="344,953,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoCursosMatriculados.xhtml"
+  NAME="#xalumno#xalumnoCursosMatriculados.xhtml"
+  PATH="/alumno/alumnoCursosMatriculados.xhtml" SHAPE="664,953,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoMateriales.xhtml"
+  NAME="#xalumno#xalumnoMateriales.xhtml"
+  PATH="/alumno/alumnoMateriales.xhtml" SHAPE="984,953,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoAvisos.xhtml"
+  NAME="#xalumno#xalumnoAvisos.xhtml" PATH="/alumno/alumnoAvisos.xhtml"
+  SHAPE="1304,953,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoAsignaciones.xhtml"
+  NAME="#xalumno#xalumnoAsignaciones.xhtml"
+  PATH="/alumno/alumnoAsignaciones.xhtml" SHAPE="1624,953,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoMedioContactoDependientes.xhtml"
+  NAME="#xapoderado#xapoderadoMedioContactoDependientes.xhtml"
+  PATH="/apoderado/apoderadoMedioContactoDependientes.xhtml"
+  SHAPE="24,1057,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteDatosPrincipales.xhtml"
+  NAME="#xdocente#xdocenteDatosPrincipales.xhtml"
+  PATH="/docente/docenteDatosPrincipales.xhtml" SHAPE="24,849,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteSeccionesCursoLectivas.xhtml"
+  NAME="#xdocente#xdocenteSeccionesCursoLectivas.xhtml"
+  PATH="/docente/docenteSeccionesCursoLectivas.xhtml"
+  SHAPE="344,849,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoListaDependientes.xhtml"
+  NAME="#xapoderado#xapoderadoListaDependientes.xhtml"
+  PATH="/apoderado/apoderadoListaDependientes.xhtml" SHAPE="984,849,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoListaDependientesSelect.xhtml"
+  NAME="#xapoderado#xapoderadoListaDependientesSelect.xhtml"
+  PATH="/apoderado/apoderadoListaDependientesSelect.xhtml"
+  SHAPE="1304,849,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoDependienteDatosPrincipales.xhtml"
+  NAME="#xapoderado#xapoderadoDependienteDatosPrincipales.xhtml"
+  PATH="/apoderado/apoderadoDependienteDatosPrincipales.xhtml"
+  SHAPE="344,1057,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoMedioContacto.xhtml"
+  NAME="#xapoderado#xapoderadoMedioContacto.xhtml"
+  PATH="/apoderado/apoderadoMedioContacto.xhtml" SHAPE="664,1057,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoAsignacionesDependiente.xhtml"
+  NAME="#xapoderado#xapoderadoAsignacionesDependiente.xhtml"
+  PATH="/apoderado/apoderadoAsignacionesDependiente.xhtml"
+  SHAPE="984,1057,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoAsistencia.xhtml"
+  NAME="#xalumno#xalumnoAsistencia.xhtml"
+  PATH="/alumno/alumnoAsistencia.xhtml" SHAPE="1304,1057,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoAvisosDependiente.xhtml"
+  NAME="#xapoderado#xapoderadoAvisosDependiente.xhtml"
+  PATH="/apoderado/apoderadoAvisosDependiente.xhtml"
+  SHAPE="1624,1057,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoCursosMatriculadosDependiente.xhtml"
+  NAME="#xapoderado#xapoderadoCursosMatriculadosDependiente.xhtml"
+  PATH="/apoderado/apoderadoCursosMatriculadosDependiente.xhtml"
+  SHAPE="24,1161,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoLibretaNotasDependiente.xhtml"
+  NAME="#xapoderado#xapoderadoLibretaNotasDependiente.xhtml"
+  PATH="/apoderado/apoderadoLibretaNotasDependiente.xhtml"
+  SHAPE="344,1161,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoRecibosPendientes.xhtml"
+  NAME="#xapoderado#xapoderadoRecibosPendientes.xhtml"
+  PATH="/apoderado/apoderadoRecibosPendientes.xhtml"
+  SHAPE="664,1161,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#apoderado#apoderadoMaterialesDependiente.xhtml"
+  NAME="#xapoderado#xapoderadoMaterialesDependiente.xhtml"
+  PATH="/apoderado/apoderadoMaterialesDependiente.xhtml"
+  SHAPE="984,1161,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoDatosPrincipales.xhtml"
+  NAME="#xalumno#xalumnoDatosPrincipales.xhtml"
+  PATH="/alumno/alumnoDatosPrincipales.xhtml" SHAPE="1304,1161,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#alumno#alumnoMedioContacto.xhtml"
+  NAME="#xalumno#xalumnoMedioContacto.xhtml"
+  PATH="/alumno/alumnoMedioContacto.xhtml" SHAPE="1624,1161,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docentePublicarMaterial.xhtml"
+  NAME="#xdocente#xdocentePublicarMaterial.xhtml"
+  PATH="/docente/docentePublicarMaterial.xhtml" SHAPE="24,1265,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteSeccionesTutor.xhtml"
+  NAME="#xdocente#xdocenteSeccionesTutor.xhtml"
+  PATH="/docente/docenteSeccionesTutor.xhtml" SHAPE="344,1265,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#principal#contactoColegio.xhtml"
+  NAME="#xprincipal#xcontactoColegio.xhtml"
+  PATH="/principal/contactoColegio.xhtml" SHAPE="664,1265,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteSeccionSelect.xhtml"
+  NAME="#xdocente#xdocenteSeccionSelect.xhtml"
+  PATH="/docente/docenteSeccionSelect.xhtml" SHAPE="984,1265,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteSeccionEvaluacionSelect.xhtml"
+  NAME="#xdocente#xdocenteSeccionEvaluacionSelect.xhtml"
+  PATH="/docente/docenteSeccionEvaluacionSelect.xhtml"
+  SHAPE="1304,1265,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteAsistenciaAlumnosSeccion.xhtml"
+  NAME="#xdocente#xdocenteAsistenciaAlumnosSeccion.xhtml"
+  PATH="/docente/docenteAsistenciaAlumnosSeccion.xhtml"
+  SHAPE="1624,1265,0,0" TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#docente#docenteIngresarEvaluacion.xhtml"
+  NAME="#xdocente#xdocenteIngresarEvaluacion.xhtml"
+  PATH="/docente/docenteIngresarEvaluacion.xhtml" SHAPE="24,1369,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+</diagram>

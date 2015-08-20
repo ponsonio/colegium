@@ -1,0 +1,70 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a="http://richfaces.org/a4j">
+
+
+	<rich:panel>
+		<h:form id="viewDatosPersonaForm">
+			<div> 
+				 <img  src= "http://www.florence-expo.com/back/imgsup/id1900_img1_foto%20carnet.jpg" width="100" height="100"/> 
+			</div>
+			<h:panelGrid columns="2" width="50%">
+				<s:div>
+					Código: <h:outputText value="#{personaHome.instance.codigo}" /> <br/>
+					Nombres :<h:outputText value="#{personaHome.instance.primerNombre} #{personaHome.instance.segundoNombre}" /><br/> 
+					Apellidos :	<h:outputText value="#{personaHome.instance.apellidoPaterno} #{personaHome.instance.apellidoMaterno}" /><br/> 
+				</s:div>
+				<s:div>
+					Grado : <h:outputText value="#{resumenAlumnoHome.instance.grado.nombre}"/><br/>
+					Sección : <h:outputText value="#{resumenAlumnoHome.instance.seccion.etiqueta}"/><br/>
+				</s:div>			     
+			</h:panelGrid>
+			
+			<div>
+					 <h:outputText value="No messages to display" rendered="#{mediosContactoList.rowCount==0}"/>
+				     <h:dataTable var="personaMedioContacto" value="#{mediosContactoList}" rendered="#{mediosContactoList.rowCount>0}">
+						   <f:facet name="header">
+							  	<h:outputText value="Información de Contacto" />
+							</f:facet> 
+				          
+				        <h:column>
+				           <f:facet name="header">
+				              <h:outputText value="Medio"/>
+				           </f:facet>
+				           <h:outputText value="#{personaMedioContacto.medioContacto.nombre}"/>
+				        </h:column>
+				        
+				        <h:column>
+				          
+				           <f:facet name="header">
+				              <h:outputText value="Referencia"/>
+				           </f:facet>
+				           <h:outputText value="#{personaMedioContacto.id.referencia}"/>
+				        </h:column>
+				        
+				     </h:dataTable>
+			</div>
+
+
+			<div style="visibility:hidden">
+				{resumenAlumnoHome.idDefined} :  <h:outputText value="#{resumenAlumnoHome.idDefined}"/>
+				 <h:commandButton id="prueba1" value="viewDatosPersona.prueba()"
+	                             action="#{viewDatosPersona.prueba}"/>
+				 <h:commandButton id="prueba2" value="recordAcademico.prueba()"
+	                             action="#{recordAcademico.prueba}"/>
+	             <h:commandButton id="prueba3" value="asistencias.mostrarInasistenciasAlumno()"
+	                             action="#{asistencias.mostrarInasistenciasAlumno}"/>			
+		      </div>		
+	
+		</h:form>
+
+	</rich:panel>
+
+
+</ui:composition>

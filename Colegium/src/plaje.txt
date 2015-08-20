@@ -1,0 +1,67 @@
+Notas TODOS
+==========================
+
+Verificar Nombres de Portlets (Que figure el Grupo y empiezen con colegium)
+Portlet de Contactos va en Generales?
+Migrar a la nueva version de Portal o Gate In (Ver si vale la pena Alfresco)
+Los codigos de alumnos con a , con d docentes y p apoderados
+
+
+Datos Principales Apoderado en Sesi—n ==> cambiar nombre
+
+
+
+
+
+
+
+
+
+Data Prueba
+============================
+
+Alumnos 
+
+a3627993
+
+          1 JOSE IGNACIO  2002-01-01       NULL           ABASCAL          BOADA            3627993 a3627993 password
+
+a0462775J
+
+          2 GUILLERMO JAVIER 2003-01-01       NULL           ACU„A            KITTO            0462775 a0462775 password
+
+a3627608
+
+          3 ANDRES FELIPE 2004-01-01       NULL           AGUILA           MOENNE           3627608 a3627608 password
+
+Apoderado 
+
+         41 FRANCISCO ESTEBAN 2043-01-01       NULL           LARRAIN          ECHEVERRIA       a2627299 a2627299 password
+         42 MARIO ANDRES      2044-01-01       NULL           LAVANDERO        SOTO             3125025  NULL     password
+         43 ANDRES IGNACIO    2045-01-01       NULL           LETELIER         NAGEL            4627792  NULL     password
+
+
+Docente
+
+a1626701
+
+         21 SEBASTIAN ARIEL 2023-01-01       NULL           CHAPARRO         PENA             1626701 a1626701 password
+
+
+
+
+select * from colegios.periodo_academico_seccion_curso pasc , colegios.periodo_academico_seccion pas
+where pasc.id_periodo_academico_seccion = pas.id_periodo_academico_seccion
+
+
+1;1;;"0";"2011";"2011-01-01";"2011-12-20"
+2;1;;"1";"2012";"2012-01-01";"2012-12-20"
+25;1;1;"0";"2011 Primer Bimestre";"2011-01-02";"2011-03-20"
+26;1;1;"0";"2011 Segundo Bimestre";"2011-04-01";"2011-06-20"
+27;1;1;"0";"2011 Tercer Bimestre";"2011-07-01";"2011-08-20"
+28;1;1;"0";"2011 Cuarto Bimestre";"2011-09-01";"2011-11-20"
+3;1;2;"1";"2012 Primer Bimestre";"2012-01-02";"2012-03-20"
+4;1;2;"0";"2012 Segundo Bimestre";"2012-04-01";"2012-06-20"
+5;1;2;"0";"2012 Tercer Bimestre";"2012-07-01";"2012-08-20"
+6;1;2;"0";"2012 Cuarto Bimestre";"2012-09-01";"2012-11-20"
+

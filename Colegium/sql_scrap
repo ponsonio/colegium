@@ -1,0 +1,17 @@
+select * from colegios.persona p
+where p.usuario like 'a1626701'
+
+select * from colegios.alumno a , colegios.alumno_apoderado ap , colegios.persona p
+where a.id_persona = ap.id_persona_alumno  and a.id_persona = 1 
+
+select * from colegios.persona p  
+where p.codigo like '3627993'
+
+select * from colegios.alumno_apoderado ap
+where ap.id_persona_alumno = 1
+
+select * from colegios.persona p
+where p.id_persona in  (41, 42, 43)
+
+select * from colegios.alumno_apoderado ap
+
